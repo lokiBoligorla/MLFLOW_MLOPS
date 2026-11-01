@@ -1,0 +1,23 @@
+[project]
+name = "mlflow-mlops"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Lokesh Boligorla", email = "lokeshboligorla77@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "dagshub>=0.7.3",
+    "mlflow==2.2.2",
+    "numpy>=1.26.4",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+mlflow-mlops = "mlflow_mlops:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
